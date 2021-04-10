@@ -80,6 +80,10 @@ header .container {
   color: #2E2B2C;
 }
 
+.header_nav ul li a i {
+  display: none;
+}
+
 .header_nav .header_btn a {
   margin-left: 40px;
   font-weight: 700;
@@ -428,7 +432,7 @@ header .container {
 
 .loyal_mobile .form {
   height: 1300px;
-  width: 500px;
+  width: 100%;
 
 }
 
@@ -677,4 +681,210 @@ footer .copyright {
   padding: 12px 15px;
   color: #FFFFFF;
   background: #2E2B2C;
+}
+
+
+
+/* 
+@media (max-width: 1100px) {
+  .age_confirmation .title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .age_confirmation .subtitle {
+    font-size: 18px;
+    line-height: 1.3em;
+  }
+} */
+
+@media(max-width: 1050px) {
+  .product .container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    background: none;
+  }
+
+  .main>.container {
+    background: url(../media/background_mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top
+  }
+}
+
+@media(max-width: 800px) {
+  .header_logo .header_logo_img img {
+    height: 60px;
+  }
+
+  header .header_nav .header_btn a {
+    margin-left: 10px;
+  }
+
+  .main {
+    padding-top: 115px;
+  }
+}
+
+@media(max-width: 700px) {
+  /* .age_confirmation .title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .age_confirmation .subtitle {
+    font-size: 18px;
+  } */
+
+  .header_nav ul li a span {
+    display: none;
+  }
+
+  .header_nav ul li a {
+    text-decoration: none;
+  }
+
+  .header_nav ul li a i {
+    display: block;
+    font-size: 20px;
+  }
+
+  .main>.container {
+    background-position: right bottom;
+  }
+
+  .main .container .parents_container_title {
+    padding-bottom: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+  }
+
+  .main .shop_online {
+    padding-top: 30px;
+  }
+
+  footer .container {
+    flex-wrap: wrap;
+  }
+
+  footer .container .col {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  footer .container h2 {
+    text-align: center;
+    display: block;
+  }
+
+  footer .container .col a {
+    text-align: center;
+    display: block;
+  }
+
+  footer .container .col form {
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 600px) {
+  header .container {
+    padding: 10px;
+    height: 55px;
+  }
+
+  header .container .header_logo img {
+    height: auto;
+    width: 39vw;
+  }
+
+  header .container .header_nav li {
+    margin: 0 6px;
+  }
+
+  header .container .header_nav ul {
+    width: 83px;
+    height: 37px;
+  }
+
+  header .container .header_nav .header_btn a {
+    padding: 6px 20px;
+  }
+
+  .main .container .parents_container_title h1 {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  .main .container .parents_container_title p {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .main {
+    padding-top: 60px;
+  }
+
+  .main>.container {
+    background: url(../media/background_mobile2.jpg);
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .main .container form {
+    margin-bottom: 10px;
+  }
+
+  .main .container .parents_container_title {
+    padding-bottom: 250px;
+  }
+
+  .main .container:not(.shop_online) {
+    background-size: auto 250px;
+  }
+
+  .main .container.second_container h2 {
+    font-size: 35px;
+  }
+
+  .main .container.second_container p {
+    font-size: 18px;
+  }
+
+  .main .shop_online {
+    padding-bottom: 30px;
+  }
+
+  .product {
+    padding: 30px 0px 30px;
+  }
+
+  footer .container .col form {
+    max-width: calc(100% - 14px);
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 450px) {
+  .loyalty_program .loyal_wrapper {
+    display: none;
+  }
+
+  .loyalty_program .loyal_mobile {
+    display: block;
+    margin: 0 auto;
+  }
 }

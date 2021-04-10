@@ -3,7 +3,7 @@ productItem = document.querySelectorAll('.product_item');
 
 
 
-const changeImg = () => {
+const showImg = () => {
   productItem.forEach((i) => {
     let img = i.querySelector('.img');
     product.addEventListener('mouseover', (event) => {
@@ -22,7 +22,9 @@ const changeImg = () => {
     });
   });
 };
-changeImg();
+showImg();
+
+
 
 
 
